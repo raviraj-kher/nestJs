@@ -7,14 +7,14 @@ export class AppController {
 
   @Get()
   getHello(): string {
-    // return this.appService.getHello();
-    return "Hi Welcome to first program of NestJs";
+    return this.appService.getHello();
+    // return "Hi Welcome to first program of NestJs";
   }
 
-  @Get(':name')
-  getHelloWordName(@Param() payload): string {
-    // return this.appService.getHello();
-    console.log(payload);
-    return "My name is " + payload.name;
-  }
+  // @Get(':name')
+  // getHelloWordName(@Param() payload): string {
+  //   // return this.appService.getHello();
+  //   console.log(payload);
+  //   return "My name is " + payload.name;
+  // }
 }
